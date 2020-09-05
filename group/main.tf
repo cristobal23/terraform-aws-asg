@@ -99,6 +99,7 @@ module "asg" {
   propagate_name_at_launch = "${var.propagate_name_at_launch}"
 
   ### VPC parameters
+  region  = "${var.region}"
   subnets = ["${var.subnets}"]
 
   ### LC parameters
