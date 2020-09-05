@@ -25,6 +25,11 @@ variable "propagate_name_at_launch" {
 }
 
 ## VPC parameters
+variable "region" {
+  type        = "string"
+  description = "AWS region to be utilized."
+}
+
 variable "subnets" {
   type = "list"
 }
